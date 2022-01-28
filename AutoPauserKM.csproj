@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net471</TargetFramework>
+    <DebugType>Full</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="AutoPauser/Helpers.cs" />
+    <Content Include="Info.json" />
+    <Content Include="Repository.json" />
+    <Content Include="CHANGELOG.md" />
+  </ItemGroup>
+  <PropertyGroup>
+    <KMInstallDir Condition=" '$(KMInstallDir)' == '' ">C:\Program Files (x86)\Steam\steamapps\common\Pathfinder Kingmaker</KMInstallDir>
+    <ModName Condition=" '$(ModName)' == '' ">AutoPauserKM</ModName>
+  </PropertyGroup>  <PropertyGroup>
+    <PostBuildEvent>
+    xcopy /y "$(SolutionDir)\bin\$(Configuration)\$(TargetFramework)\$(ModName).dll" "$(KMInstallDir)\Mods\$(ModName)\"
+    xcopy /y "$(SolutionDir)\Info.json" "$(KMInstallDir)\Mods\$(ModName)\"
+    </PostBuildEvent>
+    <RootNamespace></RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>$(KMInstallDir)\Kingmaker_Data\Managed\UnityModManager\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(KMInstallDir)\Kingmaker_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>$(KMInstallDir)\Kingmaker_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(KMInstallDir)\Kingmaker_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>    
+	<Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(KMInstallDir)\Kingmaker_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UniRx">
+      <HintPath>$(KMInstallDir)\Kingmaker_Data\Managed\UniRx.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>$(KMInstallDir)\Kingmaker_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>$(KMInstallDir)\Kingmaker_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>$(KMInstallDir)\Kingmaker_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityModManager">
+      <HintPath>$(KMInstallDir)\Kingmaker_Data\Managed\UnityModManager\UnityModManager.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

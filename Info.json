@@ -1,0 +1,10 @@
+{
+  "Id": "AutoPauserKM",
+  "DisplayName": "Auto-Pause-Enhancer - KM Edition",
+  "Author": "JesusLives24",
+  "Version": "0.1.0",
+  "ManagerVersion": "0.23.0",
+  "EntryMethod": "AutoPauser.Main.Load",
+  "HomePage": "https://github.com/FakeFriend24/pfk-auto-pauser",
+  "Repository": "https://github.com/FakeFriend24/pfk-auto-pauser/main/Repository.json"
+}
