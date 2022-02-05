@@ -17,6 +17,14 @@ namespace AutoPauser
 
         public bool AutoPauseOnBattleEnd = false;
 
+        public bool AutoPauseOnCharacterScreenOpened = false;
+
+        public bool AutoPauseOnLocalMapOpened = false;
+
+        public bool AutoPauseOnInventoryScreenOpened = false;
+        
+        public bool AutoPauseOnLootWindowOpened = false;
+
         public override void Save(UnityModManager.ModEntry modEntry)
         {
             UnityModManager.ModSettings.Save<Settings>(this, modEntry);

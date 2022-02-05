@@ -86,6 +86,10 @@ namespace AutoPauser
             settings.AutoPauseOnAreaLoad = GUILayout.Toggle(settings.AutoPauseOnAreaLoad, "Auto Pause on Area Load", fixedWidth);
             settings.AutoPauseOnBattleEnd = GUILayout.Toggle(settings.AutoPauseOnBattleEnd, "Auto Pause on Battle End", fixedWidth);
             settings.AutoPauseOnDialogFinished = GUILayout.Toggle(settings.AutoPauseOnDialogFinished, "Auto Pause on finished Dialog", fixedWidth);
+            settings.AutoPauseOnCharacterScreenOpened = GUILayout.Toggle(settings.AutoPauseOnCharacterScreenOpened, "Auto Pause on opened Character Screen", fixedWidth);
+            settings.AutoPauseOnInventoryScreenOpened = GUILayout.Toggle(settings.AutoPauseOnInventoryScreenOpened, "Auto Pause on opened Inventory", fixedWidth);
+            settings.AutoPauseOnLocalMapOpened = GUILayout.Toggle(settings.AutoPauseOnLocalMapOpened, "Auto Pause on opened local map", fixedWidth);
+            settings.AutoPauseOnLootWindowOpened = GUILayout.Toggle(settings.AutoPauseOnLootWindowOpened, "Auto Pause on opened loot window", fixedWidth);
             GUILayout.EndVertical();
         }
 

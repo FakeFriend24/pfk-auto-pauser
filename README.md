@@ -1,9 +1,14 @@
-Custom Map Markers
+Auto-Pauser 
 ===
-WotR-Edition
+Kingmaker Edition
 ----
 
-Shift + Left click on the local or global map to add your own custom map markers.  Markers may be edited (name & icon type), hidden temporarily or deleted permanently from the options menu.  The custom markers do not touch your game saves and the mod may be uninstalled safely at any point.
+Enhances the Auto-Pause function of the game with additional conditions:
+1. On Local Area loaded.
+2. On Combat ending.
+3. On Dialog finished.
+4. On opened Inventory/Character screen.
+5. On opened Lootwindow/LocalMap.
 
 Installation
 ----
@@ -16,6 +21,4 @@ Unistallation
 
 Credits
 ----
-v1ld for the initial Kingmaker Mod: [Custom Map Markers](https://www.nexusmods.com/pathfinderkingmaker/mods/131)
-
-Your Mod inspired me to actually publish something I created. Thanks.
+Yargoyle for the idea. 
